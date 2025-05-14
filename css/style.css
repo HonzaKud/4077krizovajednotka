@@ -1,0 +1,53 @@
+/* css/style.css */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url('../assets/images/menu/background.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#menu {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#menu button {
+  position: absolute;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: transparent;
+  cursor: pointer;
+}
+
+#newGame {
+  top: 35%;
+  left: 40%;
+  width: 200px;
+  height: 50px;
+}
+
+#about {
+  top: 45%;
+  left: 40%;
+  width: 200px;
+  height: 50px;
+}
+
+#exit {
+  top: 55%;
+  left: 40%;
+  width: 200px;
+  height: 50px;
+}
+
+#soundToggle {
+  top: 5%;
+  right: 5%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: black;
+}
