@@ -1,9 +1,6 @@
-/* css/style.css */
 body {
   margin: 0;
   font-family: sans-serif;
-  background: url('../assets/images/menu/background.jpg') no-repeat center center;
-  background-size: cover;
   overflow: hidden;
 }
 
@@ -13,6 +10,17 @@ body {
   height: 100vh;
 }
 
+#menu-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Změň na 'cover' pokud chceš vyplnit celé okno i za cenu ořezu */
+  z-index: -1;
+}
+
+/* Styl tlačítek – průhledná, klikací přes obrázek */
 #menu button {
   position: absolute;
   background: transparent;
@@ -22,6 +30,7 @@ body {
   cursor: pointer;
 }
 
+/* Umístění tlačítek */
 #newGame {
   top: 35%;
   left: 40%;
