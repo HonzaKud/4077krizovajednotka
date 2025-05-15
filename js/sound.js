@@ -3,7 +3,6 @@ const audio = new Audio("assets/audio/menu_theme.mp3");
 audio.loop = true;
 audio.volume = 0.5;
 
-// Debug výpis pro ověření
 audio.addEventListener("play", () => {
   console.log("🎵 Hudba začala hrát");
 });
@@ -25,5 +24,10 @@ export function toggleSound() {
   } else {
     audio.pause();
     console.log("🔕 Hudba pozastavena");
+  }
+
+  const muteOverlay = document.getElementById("muteOverlay");
+  if (muteOverlay) {
+    muteOverlay.style.display = soundOn ? "none" : "block";
   }
 }
